@@ -1,0 +1,315 @@
+/* ===== Charte graphique  ===== 
+
+Orange : rgb(220,82,3)
+Bleu : rgb(81,107,154)
+
+*/
+
+@font-face {
+    /* Font de titre*/
+    font-family: 'XRtitle';
+    src: url(font/FUCXEDCAPS-v2.otf);
+}
+
+/* ===== Mise en page générale ===== */
+html,body{
+    background-color: grey;
+    color: black;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    margin:0;
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main{
+    background-size: 100%;
+    width: 100%;
+    max-width: 100%;
+    z-index: 1;
+    background-color: white;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+p, ul {
+    text-align: justify;
+    line-height: 140%;
+    font-size: 1.2em;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    text-decoration-style: solid; 
+}
+h2{
+    font-size: 2em;
+    margin-top: 2em;
+    padding-left: .5em;
+    border-left: solid .3em rgb(220,82,3);
+    font-family: 'XRtitle', 'Crimson Text', sans-serif;
+}
+h3{
+    font-family: 'XRtitle', 'Crimson Text', sans-serif;
+}
+
+summary{
+    cursor: pointer;
+    color: black;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+    font-weight: bold;
+    }
+summary:hover{
+    text-decoration: underline;
+}
+.bouton-visio{
+    display: inline-block;
+    border: 4px double #cccccc;
+    align-self: center;
+    padding: .5em;
+    text-align: center;
+    border-radius: .5em;
+    font-size: larger;
+    color: white;
+}
+.bouton-visio:hover{
+    text-decoration: none;
+    box-shadow: .1em .1em .1em .1em #DDD;
+    cursor: pointer;
+}
+.bouton{
+    display: inline-block;
+    align-self: center;
+    background-color: rgb(81,107,154);
+    padding: .5em;
+    margin-top: 1em;
+    text-align: center;
+    border-radius: .5em;
+    font-size: larger;
+    color: white;
+}
+.bouton:hover{
+    text-decoration: none;
+    box-shadow: .1em .1em .1em .1em #DDD;
+    cursor: pointer;
+}
+.box {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.box > div{
+    display: flex;
+    flex-direction: column;
+}
+.bulle > summary{
+    padding: auto;
+    width: 10em;
+    height: 10em;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    list-style: none;
+    background-color : white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0% 5% 0%;
+}
+.bulle > p{
+    color : black;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin: 10px;
+    width: 14em;
+    background-color : white;
+    font-size: x-small;
+}
+.bold{
+    font-weight: bold;
+}
+/* ===== En-tête ===== */
+header{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(220,82,3);
+    border-bottom: solid 5px rgb(220,82,3);
+    font-family: 'XRtitle', 'Crimson Text', sans-serif;
+}
+
+nav{
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+    padding: .5em 0;
+}
+
+nav a{
+    text-align: center;
+    display: inline-block;
+    padding: .5em;
+    color: white;
+}
+
+/* ===== Banière ===== */ 
+.fond-baniere {
+    background: no-repeat;
+    align-self: center;
+    position: fixed;
+    z-index: 0;
+    width: 100%;
+    opacity: 70%;
+}
+
+.line-break {
+  line-height: 2em;
+}
+
+h1{
+    font-size: 2.5em;
+    text-align: center;
+    z-index: 2;
+    font-family: 'XRtitle', 'Crimson Text', sans-serif;
+    color: white;
+}
+
+#baniere > p{
+    font-size: 2em;
+    color: white;
+    z-index: 2;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.logo-PRC{
+    margin-top: 9em;
+    background: no-repeat;
+    align-self: center;
+    z-index: 1;
+    width: 50%;
+}
+.titre {
+    font-style: italic;
+    padding: 1em;
+    font-family: 'Crimson Text', sans-serif;
+    text-decoration: underline;
+}
+/* ===== LowTRI ===== */
+.petit-logo{
+    width: 20%;
+}
+/* ===== PRC ===== */
+.float img{
+    float: right;
+    margin: 1.2em 0 0 1.2em;
+    width: 20%;
+}
+/* ===== Programme ===== */
+#Programme h3{
+    font-size: 1.5em;
+    margin-top: 1.5em;
+    padding-left: .5em;
+    border-left: solid .3em #EC9341;
+}
+#Programme h4{
+    text-align: center;
+    color: rgb(81,107,154);
+}
+.portrait{
+    width: 11.2em;
+}
+/* ===== Partenaires ===== */
+#Partenaires h3{
+    font-size: 1.5em;
+    margin-top: 1.5em;
+    padding-left: .5em;
+    border-left: solid .3em #EC9341;
+}
+.logo{
+    max-width: 7.5em;
+    max-height: 7.5em;
+}
+.img_titre{
+    height: 5em;
+    align-self: center;
+}
+.col {
+  column-count: 4;
+  column-gap: 6em;
+}
+
+/* ===== Site low-tech ===== */
+/* ===== Pied de page ===== */
+footer{
+    background-size: 100%;
+    width: 100%;
+    max-width: 100%;
+    z-index: 1;
+    background-color: rgb(220,82,3);
+}
+.footer-box{
+    margin-right: 15%;
+    margin-left: 15%;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+    text-align: center;
+}
+.footer-box > div{
+    display: flex;
+    flex-direction: column;
+}
+footer h3{
+    border-bottom: solid 0.1em black;
+    padding: 1em;
+}
+footer a{
+    color: inherit;
+    display: block;
+    margin: .6em 0;
+}
+
+@media (max-width: 500px) {
+    .fond-baniere {
+        height: 100%;
+        width: 280%;
+    }
+    .logo-PRC {
+        width: 120%;
+    }
+    h1{
+        font-size: 180%;
+    }
+    #baniere > p{
+        font-size: 1em;
+    }
+    .float img{
+        width: 100%;
+    }
+    .col {
+        column-count: 1;
+    }
+    .petit-logo{
+        width: 70%;
+    }
+}
